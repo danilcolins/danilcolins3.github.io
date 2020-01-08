@@ -1968,10 +1968,10 @@ color:#000;
 .what-middle {
 	margin: 1.5em 0px;
 }
-.col-md-3.project-left:nth-child(3),.col-md-3.project-left:nth-child(4){
+.col-md-4.project-left:nth-child(3),.col-md-4.project-left:nth-child(4){
 	display:none;
 }
-.col-md-3.project-left {
+.col-md-4.project-left {
 	width: 50%;
 }
 .project-bottom {
