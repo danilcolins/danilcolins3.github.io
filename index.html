@@ -3,7 +3,9 @@
 <html>
 <head>
 <!-- Get user ip -->
-<script type="text/javascript" src="https://www.l2.io/ip.js?var=userip"></script>
+<?php
+echo var yaParams = {ip: "<? echo $_SERVER['REMOTE_ADDR']; ?>"};
+?>
 <!-- /Get user ip -->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -12,11 +14,11 @@
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
    ym(61701244, "init", {
+	params:window.yaParams,
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true
 	webvisor:true,
-        params:{'ip': userip}
    });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/61701244" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
